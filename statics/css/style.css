@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+:root {
+    --heard-color: #edc660;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.setion-header { 
+    background-image: linear-gradient( #ffffff00, #262626), url(../img/heder-img.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 45vh;
+    justify-content: center;
+    opacity: .95;
+
+}
+.setion-header:hover{
+    opacity: 1;
+    box-shadow: inset 0 0 2rem var(--heard-color);
+    color: var(--heard-color);
+    height: 52vh;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
+}
+.setion-header img{
+    width: 6rem;
+    height: 6rem;
+    border-radius:50%;
+    border:2px unset #6d6d6d;
+    margin-right: 5rem;
+    margin-top: 40px;
+    margin-left: 5rem;
+    padding: 1px;
+    
+    
+}
+.setion-header img:hover{
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px rgb(204, 204, 204));
+}
+.menu{
+    transform: translate(0, -4rem);
+    display: none;
+    opacity: .85;
+    font-size: 2rem;
+    text-align: center;
+}
+.menu a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: var(--heard-color);
+}
+.menu a:hover{
+    text-decoration: underline 1px;
+}
+.title-descrition{
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 50%;
+    text-align: center;
+    height: auto;
+    color: #e8831eb7;
+    font-size: 2rem;
+}
+.title-descrition :hover{
+    cursor: pointer;
+    text-decoration: underline 1px;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    background-color: #262626;
+    background-image: url(../img/fondo5.gif);
+    background-position: center;
+    background-size: 105%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.galeria .title{
+    font-family: 'Nabla', cursive;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: -6rem;
+    padding-bottom: 8rem;
+}
+.animate__animated.animate__backInUp{
+    -o-animation-duration: 20s;
+}
+.galery{
+    padding-bottom: 6rem;
+    display: flex;
+    width: 800px;
+    height: 600px;
+}
+.galery img{
+    border-radius: .5px;
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .90;
+    transition: .5s ease;
+}
+.galery img:hover{
+    cursor:pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
